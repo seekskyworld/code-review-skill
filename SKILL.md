@@ -3,8 +3,13 @@ name: code-review-excellence
 description: |
   Provides comprehensive code review guidance for React 19, Vue 3, Rust, TypeScript, and Python.
   Helps catch bugs, improve code quality, and give constructive feedback.
-  Use when reviewing pull requests, conducting PR reviews, establishing review standards,
-  or mentoring developers through code reviews.
+  Use when: reviewing pull requests, conducting PR reviews, code review, reviewing code changes,
+  establishing review standards, mentoring developers, architecture reviews, security audits,
+  checking code quality, finding bugs, giving feedback on code.
+allowed-tools:
+  - Read
+  - Grep
+  - Glob
 ---
 
 # Code Review Excellence
