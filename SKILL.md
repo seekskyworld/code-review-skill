@@ -1,9 +1,10 @@
 ---
 name: code-review-excellence
 description: |
-  Master effective code review practices to provide constructive feedback, catch bugs early, and foster knowledge sharing while maintaining team morale. Use when reviewing pull requests, establishing review standards, or mentoring developers.
-  Supports: React 19, Vue 3, Rust, TypeScript, Python.
-  Triggers: "review", "PR", "pull request", "code review"
+  Provides comprehensive code review guidance for React 19, Vue 3, Rust, TypeScript, and Python.
+  Helps catch bugs, improve code quality, and give constructive feedback.
+  Use when reviewing pull requests, conducting PR reviews, establishing review standards,
+  or mentoring developers through code reviews.
 ---
 
 # Code Review Excellence
@@ -162,16 +163,16 @@ Use labels to indicate priority:
 
 | Language/Framework | Reference File | Key Topics |
 |-------------------|----------------|------------|
-| **React** | `references/react.md` | Hooks, useEffect, React 19 Actions, RSC, Suspense, TanStack Query v5 |
-| **Vue 3** | `references/vue.md` | Composition API, 响应性系统, Props/Emits, Watchers, Composables |
-| **Rust** | `references/rust.md` | 所有权/借用, Unsafe 审查, 异步代码, 错误处理 |
-| **TypeScript** | `references/typescript.md` | 类型安全, async/await, 不可变性 |
-| **Python** | `references/python.md` | 可变默认参数, 异常处理, 类属性 |
+| **React** | [React Guide](reference/react.md) | Hooks, useEffect, React 19 Actions, RSC, Suspense, TanStack Query v5 |
+| **Vue 3** | [Vue Guide](reference/vue.md) | Composition API, 响应性系统, Props/Emits, Watchers, Composables |
+| **Rust** | [Rust Guide](reference/rust.md) | 所有权/借用, Unsafe 审查, 异步代码, 错误处理 |
+| **TypeScript** | [TypeScript Guide](reference/typescript.md) | 类型安全, async/await, 不可变性 |
+| **Python** | [Python Guide](reference/python.md) | 可变默认参数, 异常处理, 类属性 |
 
 ## Additional Resources
 
-- `references/common-bugs-checklist.md` - 按语言分类的常见错误清单
-- `references/security-review-guide.md` - 安全审查指南
-- `references/code-review-best-practices.md` - 代码审查最佳实践
-- `assets/pr-review-template.md` - PR 审查评论模板
-- `assets/review-checklist.md` - 快速参考清单
+- [Common Bugs Checklist](reference/common-bugs-checklist.md) - 按语言分类的常见错误清单
+- [Security Review Guide](reference/security-review-guide.md) - 安全审查指南
+- [Code Review Best Practices](reference/code-review-best-practices.md) - 代码审查最佳实践
+- [PR Review Template](assets/pr-review-template.md) - PR 审查评论模板
+- [Review Checklist](assets/review-checklist.md) - 快速参考清单

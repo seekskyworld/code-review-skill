@@ -37,11 +37,11 @@ This is a Claude Code skill designed to help developers conduct effective code r
 | File | Lines | Description |
 |------|-------|-------------|
 | **SKILL.md** | ~180 | Core principles + index (loads on skill activation) |
-| **references/react.md** | ~650 | React/Next.js patterns (on-demand) |
-| **references/vue.md** | ~200 | Vue 3 patterns (on-demand) |
-| **references/rust.md** | ~200 | Rust patterns (on-demand) |
-| **references/typescript.md** | ~100 | TypeScript/JS patterns (on-demand) |
-| **references/python.md** | ~60 | Python patterns (on-demand) |
+| **reference/react.md** | ~650 | React/Next.js patterns (on-demand) |
+| **reference/vue.md** | ~200 | Vue 3 patterns (on-demand) |
+| **reference/rust.md** | ~200 | Rust patterns (on-demand) |
+| **reference/typescript.md** | ~100 | TypeScript/JS patterns (on-demand) |
+| **reference/python.md** | ~60 | Python patterns (on-demand) |
 
 **Total: ~2,000+ lines** of review guidelines and code examples, loaded on-demand per language.
 
@@ -84,7 +84,7 @@ ai-code-review-guide/
 ├── README.md                       # This file
 ├── LICENSE                         # MIT License
 ├── CONTRIBUTING.md                 # Contribution guidelines
-├── references/
+├── reference/                      # On-demand loaded guides
 │   ├── react.md                    # React/Next.js patterns (on-demand)
 │   ├── vue.md                      # Vue 3 patterns (on-demand)
 │   ├── rust.md                     # Rust patterns (on-demand)
@@ -197,11 +197,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 | 文件 | 行数 | 描述 |
 |------|------|------|
 | **SKILL.md** | ~180 | 核心原则 + 索引（技能激活时加载）|
-| **references/react.md** | ~650 | React/Next.js 模式（按需加载）|
-| **references/vue.md** | ~200 | Vue 3 模式（按需加载）|
-| **references/rust.md** | ~200 | Rust 模式（按需加载）|
-| **references/typescript.md** | ~100 | TypeScript/JS 模式（按需加载）|
-| **references/python.md** | ~60 | Python 模式（按需加载）|
+| **reference/react.md** | ~650 | React/Next.js 模式（按需加载）|
+| **reference/vue.md** | ~200 | Vue 3 模式（按需加载）|
+| **reference/rust.md** | ~200 | Rust 模式（按需加载）|
+| **reference/typescript.md** | ~100 | TypeScript/JS 模式（按需加载）|
+| **reference/python.md** | ~60 | Python 模式（按需加载）|
 
 **总计：2,000+ 行**审查指南和代码示例，按语言按需加载。
 
@@ -244,7 +244,7 @@ ai-code-review-guide/
 ├── README.md                       # 本文件
 ├── LICENSE                         # MIT 许可证
 ├── CONTRIBUTING.md                 # 贡献指南
-├── references/
+├── reference/                      # 按需加载的指南
 │   ├── react.md                    # React/Next.js 模式（按需加载）
 │   ├── vue.md                      # Vue 3 模式（按需加载）
 │   ├── rust.md                     # Rust 模式（按需加载）
