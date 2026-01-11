@@ -20,6 +20,8 @@ ai-code-review-guide/
 │   ├── rust.md
 │   ├── typescript.md
 │   ├── python.md
+│   ├── c.md
+│   ├── cpp.md
 │   ├── common-bugs-checklist.md
 │   ├── security-review-guide.md
 │   └── code-review-best-practices.md
@@ -84,8 +86,8 @@ Description 必须包含两部分：
 # ✅ 正确示例
 description: |
   Provides comprehensive code review guidance for React 19, Vue 3, Rust,
-  TypeScript, and Python. Helps catch bugs, improve code quality, and
-  give constructive feedback.
+  TypeScript, Java, Python, and C/C++.
+  Helps catch bugs, improve code quality, and give constructive feedback.
   Use when reviewing pull requests, conducting PR reviews, establishing
   review standards, or mentoring developers through code reviews.
 

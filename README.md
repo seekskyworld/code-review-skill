@@ -6,7 +6,7 @@
 
 ## English
 
-> A modular code review skill for Claude Code, covering React 19, Vue 3, Rust, TypeScript, Java, Python, CSS/Less/Sass, architecture design, and performance optimization.
+> A modular code review skill for Claude Code, covering React 19, Vue 3, Rust, TypeScript, Java, Python, C/C++, CSS/Less/Sass, architecture design, and performance optimization.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -14,7 +14,7 @@
 
 This is a Claude Code skill designed to help developers conduct effective code reviews. It provides:
 
-- **Language-specific patterns** for React 19, Vue 3, Rust, TypeScript/JavaScript, Java, Python
+- **Language-specific patterns** for React 19, Vue 3, Rust, TypeScript/JavaScript, Java, Python, C/C++
 - **Modern framework support** including React Server Components, TanStack Query v5, Suspense & Streaming
 - **Comprehensive checklists** for security, performance, and code quality
 - **Best practices** for giving constructive feedback
@@ -32,6 +32,8 @@ This is a Claude Code skill designed to help developers conduct effective code r
 | **TypeScript** | Type safety, async/await patterns, common pitfalls |
 | **Java** | Java 17/21 features (Records, Switch), Spring Boot 3, Virtual Threads, Stream API best practices |
 | **Go** | Error handling, goroutines/channels, context propagation, interface design, testing patterns |
+| **C** | Pointer safety, UB pitfalls, resource management, error handling |
+| **C++** | RAII, ownership, move semantics, exception safety, performance |
 | **CSS/Less/Sass** | CSS variables, !important usage, performance optimization, responsive design, browser compatibility |
 | **TanStack Query** | v5 best practices, queryOptions, useSuspenseQuery, optimistic updates |
 | **Architecture** | SOLID principles, anti-patterns, coupling/cohesion, layered architecture |
@@ -49,11 +51,13 @@ This is a Claude Code skill designed to help developers conduct effective code r
 | **reference/java.md** | ~800 | Java 17/21 & Spring Boot 3 patterns (on-demand) |
 | **reference/python.md** | ~1070 | Python async/typing/pytest (on-demand) |
 | **reference/go.md** | ~990 | Go goroutines/channels/context/interfaces (on-demand) |
+| **reference/c.md** | ~210 | C memory safety/UB/error handling (on-demand) |
+| **reference/cpp.md** | ~300 | C++ RAII/lifetime/move semantics (on-demand) |
 | **reference/css-less-sass.md** | ~660 | CSS/Less/Sass variables/performance/responsive (on-demand) |
 | **reference/architecture-review-guide.md** | ~470 | SOLID/anti-patterns/coupling analysis (on-demand) |
 | **reference/performance-review-guide.md** | ~750 | Core Web Vitals/N+1/memory/complexity (on-demand) |
 
-**Total: ~9,000 lines** of review guidelines and code examples, loaded on-demand per language.
+**Total: ~9,500 lines** of review guidelines and code examples, loaded on-demand per language.
 
 ### Installation
 
@@ -102,6 +106,8 @@ code-review-skill/
 │   ├── java.md                     # Java patterns (on-demand)
 │   ├── python.md                   # Python patterns (on-demand)
 │   ├── go.md                       # Go patterns (on-demand)
+│   ├── c.md                        # C patterns (on-demand)
+│   ├── cpp.md                      # C++ patterns (on-demand)
 │   ├── css-less-sass.md            # CSS/Less/Sass patterns (on-demand)
 │   ├── architecture-review-guide.md # Architecture design review (on-demand)
 │   ├── performance-review-guide.md # Performance review (on-demand)
@@ -162,13 +168,18 @@ This means reviewing a React PR only loads SKILL.md + react.md, not Vue/Rust/Pyt
 - Async/await patterns (avoiding blocking in async context)
 - Error handling (thiserror for libraries, anyhow for applications)
 
+#### C/C++
+
+- **C**: Pointer safety, UB pitfalls, resource cleanup, integer overflow
+- **C++**: RAII ownership, Rule of 0/3/5, move semantics, exception safety
+
 ### Contributing
 
 Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 #### Areas for Contribution
 
-- Additional language support (Java, C++, Swift, etc.)
+- Additional language support (C#, Swift, Kotlin, etc.)
 - More framework-specific patterns
 - Translations to other languages
 - Bug pattern submissions
@@ -188,7 +199,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 中文
 
-> 一个模块化的 Claude Code 代码审查技能，覆盖 React 19、Vue 3、Rust、TypeScript、Java、Python、CSS/Less/Sass、架构设计和性能优化。
+> 一个模块化的 Claude Code 代码审查技能，覆盖 React 19、Vue 3、Rust、TypeScript、Java、Python、C/C++、CSS/Less/Sass、架构设计和性能优化。
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -196,7 +207,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 这是一个为 Claude Code 设计的代码审查技能，旨在帮助开发者进行高效的代码审查。它提供：
 
-- **语言特定模式**：覆盖 React 19、Vue 3、Rust、TypeScript/JavaScript、Java、Python
+- **语言特定模式**：覆盖 React 19、Vue 3、Rust、TypeScript/JavaScript、Java、Python、C/C++
 - **现代框架支持**：包括 React Server Components、TanStack Query v5、Suspense & Streaming
 - **全面的检查清单**：安全、性能和代码质量检查
 - **最佳实践**：如何提供建设性的反馈
@@ -214,6 +225,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 | **TypeScript** | 类型安全、async/await 模式、常见陷阱 |
 | **Java** | Java 17/21 特性（Records, Switch）、Spring Boot 3、虚拟线程、Stream API 最佳实践 |
 | **Go** | 错误处理、goroutine/channel、context 传播、接口设计、测试模式 |
+| **C** | 指针/缓冲区安全、UB、资源管理、错误处理 |
+| **C++** | RAII、生命周期、Rule of 0/3/5、异常安全 |
 | **CSS/Less/Sass** | CSS 变量规范、!important 使用、性能优化、响应式设计、浏览器兼容性 |
 | **TanStack Query** | v5 最佳实践、queryOptions、useSuspenseQuery、乐观更新 |
 | **架构设计** | SOLID 原则、架构反模式、耦合度/内聚性、分层架构 |
@@ -231,11 +244,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 | **reference/java.md** | ~800 | Java 17/21 & Spring Boot 3 模式（按需加载）|
 | **reference/python.md** | ~1070 | Python async/类型注解/pytest（按需加载）|
 | **reference/go.md** | ~990 | Go goroutine/channel/context/接口（按需加载）|
+| **reference/c.md** | ~210 | C 内存安全/UB/错误处理（按需加载）|
+| **reference/cpp.md** | ~300 | C++ RAII/生命周期/移动语义（按需加载）|
 | **reference/css-less-sass.md** | ~660 | CSS/Less/Sass 变量/性能/响应式（按需加载）|
 | **reference/architecture-review-guide.md** | ~470 | SOLID/反模式/耦合度分析（按需加载）|
 | **reference/performance-review-guide.md** | ~750 | Core Web Vitals/N+1/内存/复杂度（按需加载）|
 
-**总计：9,000 行**审查指南和代码示例，按语言按需加载。
+**总计：9,500 行**审查指南和代码示例，按语言按需加载。
 
 ### 安装
 
@@ -284,6 +299,8 @@ code-review-skill/
 │   ├── java.md                     # Java 模式（按需加载）
 │   ├── python.md                   # Python 模式（按需加载）
 │   ├── go.md                       # Go 模式（按需加载）
+│   ├── c.md                        # C 模式（按需加载）
+│   ├── cpp.md                      # C++ 模式（按需加载）
 │   ├── css-less-sass.md            # CSS/Less/Sass 模式（按需加载）
 │   ├── architecture-review-guide.md # 架构设计审查（按需加载）
 │   ├── performance-review-guide.md # 性能审查（按需加载）
@@ -344,13 +361,18 @@ code-review-skill/
 - Async/await 模式（避免在异步上下文中阻塞）
 - 错误处理（库用 thiserror，应用用 anyhow）
 
+#### C/C++
+
+- **C**：指针/缓冲区安全、UB、资源清理、整数溢出
+- **C++**：RAII 所有权、Rule of 0/3/5、移动语义、异常安全
+
 ### 贡献
 
 欢迎贡献！请阅读 [CONTRIBUTING.md](CONTRIBUTING.md) 了解贡献指南。
 
 #### 可贡献的方向
 
-- 添加更多语言支持（Java、C++、Swift 等）
+- 添加更多语言支持（C#、Swift、Kotlin 等）
 - 更多框架特定模式
 - 翻译成其他语言
 - 提交错误模式
