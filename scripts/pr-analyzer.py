@@ -52,6 +52,14 @@ def detect_language(filename: str) -> str:
         '.jsx': 'JavaScript/React',
         '.rs': 'Rust',
         '.go': 'Go',
+        '.c': 'C',
+        '.h': 'C/C++',
+        '.cpp': 'C++',
+        '.hpp': 'C++',
+        '.cc': 'C++',
+        '.cxx': 'C++',
+        '.hh': 'C++',
+        '.hxx': 'C++',
         '.java': 'Java',
         '.rb': 'Ruby',
         '.sql': 'SQL',
@@ -252,6 +260,8 @@ def generate_suggestions(files: List[FileStats], complexity: float, risks: List[
         suggestions.append("Check for proper type usage (avoid 'any')")
     if 'Rust' in languages:
         suggestions.append("Check for unwrap() usage and error handling")
+    if 'C' in languages or 'C++' in languages or 'C/C++' in languages:
+        suggestions.append("Check for memory safety, bounds checks, and UB risks")
     if 'SQL' in languages:
         suggestions.append("Review for SQL injection and query performance")
 
